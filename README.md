@@ -8,7 +8,7 @@
 $ cat sample/000_sample.el 
 '( :a 1 :b 2 :c 3)
 
-$ cat sample/000_sample.el | emacs --script lisfy-json.el -f batch-lisfy-json
+$ cat sample/000_sample.el | emacs --script lison-json.el -f batch-lison-json
 {
   "a": 1,
   "b": 2,
@@ -47,7 +47,7 @@ $ cat sample/000_sample.el | emacs --script lisfy-json.el -f batch-lisfy-json
 ```
 
 ```json
-$ cat sample/001_s3.el | emacs --script lisfy-json.el -f batch-lisfy-json
+$ cat sample/001_s3.el | emacs --script lison-json.el -f batch-lison-json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Transform": "AWS::Serverless-2016-10-31",
@@ -146,7 +146,7 @@ lison is evaled, so you can use all Elisp for constructing JSON.
 ```
 
 ```json
-$ cat sample/002_s3_eval.el | emacs --script lisfy-json.el -f batch-lisfy-json
+$ cat sample/002_s3_eval.el | emacs --script lison-json.el -f batch-lison-json
 {
   "AWSTemplateFormatVersion": "2010-09-09",
   "Transform": "AWS::Serverless-2016-10-31",

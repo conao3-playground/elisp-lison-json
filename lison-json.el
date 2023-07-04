@@ -1,4 +1,4 @@
-;;; lisfy-json.el --- lisfy into json                      -*- lexical-binding: t; -*-
+;;; lison-json.el --- lison into json                      -*- lexical-binding: t; -*-
 
 ;; Copyright (C) 2023  Naoya Yamashita
 
@@ -8,7 +8,7 @@
 
 ;;; Commentary:
 
-;; Lisfy into json
+;; Lison into json
 
 ;;; Code:
 
@@ -23,15 +23,15 @@
       (insert line "\n"))
     (buffer-string)))
 
-(defun lisfy-json-print (arg)
+(defun lison-json-print (arg)
   "Return ARG as json string."
   (let ((json-encoding-pretty-print t))
     (json-encode arg)))
 
-(defun batch-lisfy-json ()
-  "Entrypoint of lisfy-json."
-  (princ (lisfy-json-print (eval (read (get-stdin-buffer))))))
+(defun batch-lison-json ()
+  "Entrypoint of lison-json."
+  (princ (lison-json-print (eval (read (get-stdin-buffer))))))
 
-(provide 'lisfy-json)
-;;; lisfy-json.el ends here
+(provide 'lison-json)
+;;; lison-json.el ends here
 
