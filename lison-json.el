@@ -34,4 +34,3 @@
 
 (provide 'lison-json)
 ;;; lison-json.el ends here
-
